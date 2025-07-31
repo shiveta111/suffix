@@ -28,7 +28,6 @@ const items = [
 const ClientDeliverySection = () => {
     return (
         <section className="bg-[#006E81] text-white px-6 md:px-10 py-16 md:flex md:justify-between md:items-start">
-
             <div className="md:w-1/3 mb-10 md:mb-0">
                 <h2 className="text-[34px] leading-[39.78px] font-semibold font-['Poppins'] mb-4">
                     Delivering for our <br /> clients at scale
@@ -37,7 +36,6 @@ const ClientDeliverySection = () => {
                     We deliver consistent, high-quality solutions tailored to our clients' needs—at any scale.
                 </p>
             </div>
-
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 md:w-[65%]">
                 {items.map((item, index) => (
