@@ -23,7 +23,6 @@ const Footer = () => {
                         <span className="text-sm">+91 99250 02037</span>
                     </div>
                     <button className="border border-white px-4 py-2 flex items-center gap-2 text-xs font-semibold tracking-wide hover:bg-white hover:text-[#006E81] transition-all">
-                        <Image src="/assets/icons/message-icon.png" alt="Message Icon" width={16} height={16} />
                         CONTACT ONLINE
                     </button>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const services = [
     {
@@ -39,13 +40,13 @@ const PurposeSection = () => {
 
                         <div className="text-[#333] space-y-6 text-base leading-7 font-normal">
                             <p>
-                                At Suffix Process Solutions Pvt. Ltd., we empower Banking, Financial Services, and Insurance (BFSI) institutions to thrive in a rapidly evolving, Phygital landscape by delivering intelligent, secure, and comprehensive process solutions. Our unique strength lies in seamlessly integrating manpower-driven services, cutting-edge automation tools, and Robotic Process Automation (RPA)—providing both tech and non-tech solutions under one unified roof.
+                                At Suffix Process Solutions Pvt. Ltd., we empower Banking, Financial Services, and Insurance (BFSI) institutions to thrive in a rapidly evolving, Phygital landscape by delivering intelligent, secure, and comprehensive process solutions. Our unique strength lies in seamlessly integrating manpower-driven services, cutting-edge automation tools, and Robotic Process Automation (RPA)&mdash;providing both tech and non-tech solutions under one unified roof.
                             </p>
                             <p>
-                                In a world increasingly defined by digital precision and human insight, we passionately believe in the synergy of technology's accuracy with the nuanced wisdom of human expertise. Our philosophy of "Hi-tech. Hybrid. Human." drives every solution we deliver, ensuring streamlined workflows, cost reduction, enhanced compliance, and superior service quality.
+                                In a world increasingly defined by digital precision and human insight, we passionately believe in the synergy of technology&rsquo;s accuracy with the nuanced wisdom of human expertise. Our philosophy of &ldquo;Hi-tech. Hybrid. Human.&rdquo; drives every solution we deliver, ensuring streamlined workflows, cost reduction, enhanced compliance, and superior service quality.
                             </p>
                             <p>
-                                Committed to the highest standards of data security and privacy, our services comply fully with ISO 27001:2022, ISO 27701:2019, and the Digital Personal Data Protection Act (DPDPA)—guaranteeing trust, transparency, and accountability at all operational levels. At Suffix, we commit to being your trusted partner—elevating excellence into extraordinary results, turning potential into tangible success, and shaping every effort into your unique hallmark.
+                                Committed to the highest standards of data security and privacy, our services comply fully with ISO 27001:2022, ISO 27701:2019, and the Digital Personal Data Protection Act (DPDPA)&mdash;guaranteeing trust, transparency, and accountability at all operational levels. At Suffix, we commit to being your trusted partner&mdash;elevating excellence into extraordinary results, turning potential into tangible success, and shaping every effort into your unique hallmark.
                             </p>
                         </div>
                     </div>
@@ -57,10 +58,13 @@ const PurposeSection = () => {
                                 className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
                             >
                                 <div className="relative h-48">
-                                    <img
+                                    <Image
                                         src={service.image}
                                         alt={service.title}
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        className="object-cover"
+                                        priority={index === 0}
                                     />
                                 </div>
                                 <div className="p-6">

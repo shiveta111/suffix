@@ -13,7 +13,7 @@ const BlogEventsSection = () => {
 
                 <div className="flex items-center gap-3">
                     <h2 className="text-[32px] font-bold text-[#006E81]">Events That Matter</h2>
-                    <Image src="/assets/icons/events-icon.png" alt="icon" width={24} height={24} />
+                    <Image src="/assets/collaboration-icon.png" alt="icon" width={24} height={24} />
                 </div>
 
 
@@ -60,7 +60,7 @@ const BlogEventsSection = () => {
 
                         <div className="flex gap-4 items-start">
                             <Image
-                                src="/closeup-pretty-young-woman-checking-email.png"
+                                src="/events blog3.png"
                                 alt="Collaboration"
                                 width={180}
                                 height={186}

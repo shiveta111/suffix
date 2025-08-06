@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const items = [
     {
         icon: "/assets/icons/hybrid.png",
@@ -33,17 +35,19 @@ const ClientDeliverySection = () => {
                     Delivering for our <br /> clients at scale
                 </h2>
                 <p className="text-[15px] leading-[16.8px] font-light font-['Poppins']">
-                    We deliver consistent, high-quality solutions tailored to our clients' needs—at any scale.
+                    We deliver consistent, high-quality solutions tailored to our clients&apos; needs&mdash;at any scale.
                 </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 md:w-[65%]">
                 {items.map((item, index) => (
                     <div key={index} className="flex items-start gap-4">
-                        <img
+                        <Image
                             src={item.icon}
-                            alt={`icon-${index + 1}`}
-                            className="w-10 h-10 flex-shrink-0"
+                            alt={item.text}
+                            width={40}
+                            height={40}
+                            className="flex-shrink-0"
                         />
                         <p className="text-white text-sm leading-snug font-['Poppins']">
                             {item.text}
